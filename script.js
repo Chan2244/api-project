@@ -1,7 +1,4 @@
-const apiUrl = "https://iskarr.github.io/austindonovan.gethub.io/api/business.json"
-
-        fetch(https://iskarr.github.io/austindonovan.gethub.io/api/business.json)
-        .then((response) => response.json())
-        .then((jsObject) => {
-            console.log(jsObject);
-        });
+fetch("https://iskarr.github.io/austindonovan.github.io/api/business.json")
+  .then(response => response.json()) // Parse the response as JSON
+  .then(data => console.log(data)) // Process the retrieved data
+  .catch(error => console.error('Error fetching data:', error))
